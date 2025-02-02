@@ -11,10 +11,12 @@ function Trip({ id, name, start_date, end_date, handleDeleteTrip }) {
         <h2 className="text-xl font-semibold text-gray-800 mb-2">{name}</h2>
 
         <p className="text-gray-600 text-sm mb-4">
-          <strong>Start Date:</strong>{" "}
+          <strong>Start Date:</strong>
+          {start_date}
         </p>
         <p className="text-gray-600 text-sm mb-4">
           <strong>End Date:</strong>
+          {end_date}
         </p>
       </div>
 
