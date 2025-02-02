@@ -13,10 +13,8 @@ function Home() {
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
             Explore beautiful destinations around the world. Start your journey
-            today! With this App, you can view and toggle destinations that you
-            have visited and those you have not visited. You can delete a
-            destination from the destination list and also add a new
-            destination.
+            today! With this App, you can view and add new destinations. You can
+            also add a new trip and list of trips.
           </p>
           <div className="flex justify-center mb-12">
             <a
