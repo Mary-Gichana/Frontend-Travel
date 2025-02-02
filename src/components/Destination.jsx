@@ -13,7 +13,7 @@ function Destination({
     setUserVisited(!userVisited);
 
     fetch(`http://127.0.0.1:5000/destinations/${id}`, {
-      method: "POST",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
