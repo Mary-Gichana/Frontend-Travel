@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Field, Form } from "formik";
-import * as Yup from "yup"; // Import Yup for validation
+import * as Yup from "yup";
 import Navbar from "./Navbar";
 
-// Define validation schema with Yup
 const validationSchema = Yup.object({
   name: Yup.string()
     .required("Destination name is required") // String required validation
@@ -23,7 +22,7 @@ function NewDestinationForm({ handleAddDestination }) {
   };
 
   const handleFormSubmit = (values) => {
-    fetch("http://127.0.0.1:5000/destinations", {
+    fetch("https://travel-flask-app-12.onrender.com/destinations", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

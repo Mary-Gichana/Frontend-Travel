@@ -25,7 +25,7 @@ This is a practical travel Web app built using React JS. The app demonstrates co
 
 ### View Live Site
 
-Visit the deployed application at:
+Visit the deployed application at:https://frontend-travelapp.netlify.app/
 
 The live site allows you to:
 
@@ -67,8 +67,8 @@ If you want to run the project locally, you'll need:
 
 ## Backend API
 
-- Repository:
-- Deployed API:
+- Repository:https://github.com/Mary-Gichana/Travel-flask-app
+- Deployed API:https://travel-flask-app-12.onrender.com/
 
 ## Support and Contact Details
 

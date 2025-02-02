@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   const [destinations, setDestinations] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/destinations")
+    fetch("https://travel-flask-app-12.onrender.com/destinations")
       .then((response) => response.json())
       .then((data) => setDestinations(data))
       .catch((error) => console.log(error));
@@ -17,7 +17,7 @@ function App() {
 
   const [trips, setTrips] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/trips")
+    fetch("https://travel-flask-app-12.onrender.com/trips")
       .then((response) => response.json())
       .then((data) => setTrips(data))
       .catch((error) => console.log(error));
@@ -30,7 +30,7 @@ function App() {
     setTrips([...trips, newTrip]);
   }
   function handleDeleteDestination(id) {
-    fetch(`http://127.0.0.1:5000/destinations/${id}`, {
+    fetch(`https://travel-flask-app-12.onrender.com/destinations/${id}`, {
       method: "DELETE",
     })
       .then(() => {
@@ -41,7 +41,7 @@ function App() {
       .catch((error) => console.error(error));
   }
   function handleDeleteTrip(id) {
-    fetch(`http://127.0.0.1:5000/trips/${id}`, {
+    fetch(`https://travel-flask-app-12.onrender.com/trips/${id}`, {
       method: "DELETE",
     })
       .then(() => {

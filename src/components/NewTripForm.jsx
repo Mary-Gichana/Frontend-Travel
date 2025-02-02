@@ -26,7 +26,7 @@ function NewTripForm({ handleAddTrip }) {
   };
 
   const handleFormSubmit = (values, { resetForm }) => {
-    fetch("http://127.0.0.1:5000/trips", {
+    fetch("https://travel-flask-app-12.onrender.com/trips", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
