@@ -1,20 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Field, Form } from "formik";
-import * as Yup from "yup"; // Import Yup for validation
+import * as Yup from "yup";
 import Navbar from "./Navbar";
 
-// Define validation schema with Yup
 const validationSchema = Yup.object({
   name: Yup.string()
-    .required("Trip name is required") // String required validation
-    .min(3, "Trip name must be at least 3 characters long"), // Minimum length validation
+    .required("Trip name is required")
+    .min(3, "Trip name must be at least 3 characters long"),
   start_date: Yup.date()
-    .required("Start date is required") // Date required validation
-    .min(new Date(), "Start date must be today or in the future"), // Start date validation (cannot be in the past)
+    .required("Start date is required")
+    .min(new Date(), "Start date must be today or in the future"),
   end_date: Yup.date()
-    .required("End date is required") // Date required validation
-    .min(Yup.ref("start_date"), "End date must be after the start date"), // End date validation (must be after the start date)
+    .required("End date is required")
+    .min(Yup.ref("start_date"), "End date must be after the start date"),
 });
 
 function NewTripForm({ handleAddTrip }) {
@@ -53,7 +52,7 @@ function NewTripForm({ handleAddTrip }) {
           <Formik
             initialValues={initialValues}
             onSubmit={handleFormSubmit}
-            validationSchema={validationSchema} // Add validation schema here
+            validationSchema={validationSchema}
           >
             {({ errors, touched }) => (
               <Form className="space-y-6">
