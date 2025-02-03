@@ -18,7 +18,7 @@ function Contact() {
 
         <div className="flex space-x-6 mb-6">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/mary-gichana-45850a240/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 text-xl hover:text-blue-800 transition"
